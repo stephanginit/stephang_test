@@ -16,6 +16,7 @@ require_once './includes/bootstrap.inc';
 drupal_bootstrap(DRUPAL_BOOTSTRAP_FULL);
 
 $return = menu_execute_active_handler();
+$ret = "";
 
 // Menu status constants are integers; page content is a string.
 if (is_int($return)) {
